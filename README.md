@@ -67,7 +67,7 @@ No additional dependencies are required.
 
 ## Live Demo
 
-[View Student Management System](YOUR-GITHUB-PAGES-LINK)
+[View Student Management System](https://ibrahim0810musa-gif.github.io/student-management-system/)
 
 ## Future Improvements
 
