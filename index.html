@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- HAMBURGER MENU BUTTON -->
+    <button
+        id="menu-toggle"
+        class="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-controls="sidebar-menu"
+        aria-expanded="false"
+    >
+        ☰
+    </button>
+    
+    <!-- HEADER -->
+    <header class="page-header">
+        <h1>Student Management System</h1>
+        <p>Welcome to your school administration dashboard.</p>
+    </header>
+
+    <!-- DASHBOARD CONTENT -->
+    <main class="dashboard-page" id="dashboard">
+
+        <!-- INTRODUCTION -->
+        <section class="dashboard-welcome">
+            <h2>Dashboard Overview</h2>
+            <p>
+                Manage student information, registration, and
+                school records from one convenient place.
+            </p>
+        </section>
+
+        <!-- STATISTICS -->
+        <section class="dashboard-stats">
+
+            <article class="stat-card">
+                <h3>Total Students</h3>
+                <p class="stat-number" id="total-students">0</p>
+            </article>
+
+            <article class="stat-card">
+                <h3>Active Students</h3>
+                <p class="stat-number" id="active-students">0</p>
+            </article>
+
+            <article class="stat-card">
+                <h3>Inactive Students</h3>
+                <p class="stat-number" id="inactive-students">0</p>
+            </article>
+            
+            <article class="stat-card">
+                 <h3>Total Classes</h3>
+                 <p class="stat-number" id="total-classes">0</p>
+            </article>
+
+
+<article class="stat-card">
+    <h3>Student Distribution by Class</h3>
+
+    <ul id="class-distribution">
+        <li>Loading class data...</li>
+    </ul>
+</article>
+        </section>
+
+        <!-- QUICK LINKS -->
+        <section class="dashboard-quick-links">
+            <h2>Quick Actions</h2>
+
+            <a href="students.html" class="dashboard-action">
+                Manage Students
+            </a>
+
+            <a href="classes.html" class="dashboard-action">
+                View Classes
+            </a>
+
+            <a href="contact.html" class="dashboard-action">
+                Contact School
+            </a>
+        </section>
+
+        <!-- RECENT STUDENTS -->
+        <section class="dashboard-recent">
+            <h2>Student Records</h2>
+            <p>
+                To register a student, view all records, search,
+                edit, or delete a record, visit the Students page.
+            </p>
+
+            <a href="students.html" class="dashboard-action">
+                Open Student Management
+            </a>
+        </section>
+
+    </main>
+
+    <!-- SIDEBAR NAVIGATION -->
+    <nav
+        id="sidebar-menu"
+        class="sidebar-menu"
+        aria-label="Main navigation"
+    >
+        <button
+            id="menu-close"
+            class="menu-close"
+            aria-label="Close navigation menu"
+        >
+            &times;
+        </button>
+
+        <h2>School Menu</h2>
+
+        <a href="index.html">Dashboard</a>
+        <a href="students.html">Students</a>
+        <a href="classes.html">Classes</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="settings.html">Settings</a>
+    </nav>
+
+    <!-- DARK OVERLAY -->
+    <div
+        id="menu-overlay"
+        class="menu-overlay"
+        aria-hidden="true"
+    >
+    </div>
+    <footer>
+        <p>&copy; 2026 Student Management System. All rights reserved.</p>
+        <p>Designed and developed with care.</p>
+    </footer>
+
+<div id="notification-container" aria-live="polite"></div>
+</body>
+</html>

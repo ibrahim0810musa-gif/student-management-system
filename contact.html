@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+
+<script src="script.js" defer></script>
+</head>
+<body>
+   <!-- HAMBURGER MENU BUTTON -->
+    <button
+        id="menu-toggle"
+        class="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-controls="sidebar-menu"
+        aria-expanded="false"
+    >
+        ☰
+    </button>
+    <header class="page-header">
+        <h1>Contact Our School</h1>
+        <p>We are here to listen, assist, and help.</p>
+    </header>
+
+    <main class="contact-page">
+
+        <section class="contact-intro">
+            <h2>Get in Touch</h2>
+            <p>
+                Do you have a question, complaint, or request?
+                Contact the school administration using the form below.
+                We welcome your feedback and will do our best to assist you.
+            </p>
+        </section>
+
+        <section class="contact-details">
+            <h2>School Contact Information</h2>
+
+            <div class="contact-info-card">
+                <h3>Phone Number</h3>
+  <p>Replace with the school's official phone number.</p>
+            </div>
+
+            <div class="contact-info-card">
+                <h3>Email Address</h3>
+                <p>Replace with the school's official email address.</p>
+            </div>
+
+            <div class="contact-info-card">
+                <h3>Office Hours</h3>
+                <p>Monday - Friday: 8:00 AM - 4:00 PM</p>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+
+            <form id="contact-form">
+
+                <label for="contact-name">Full Name</label>
+                <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <label for="contact-reason">Reason for Contact</label>
+                <select id="contact-reason" name="reason" required>
+                    <option value="">Choose a reason</option>
+                    <option value="admission">Admission Enquiry</option>
+                    <option value="student-record">Student Records</option>
+                    <option value="fees">School Fees</option>
+                    <option value="maintenance">School Maintenance</option>
+                    <option value="complaint">Complaint</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="contact-phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="contact-phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+
+                <label for="contact-email">Email Address</label>
+                <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+
+                <label for="contact-message">Your Message</label>
+                <textarea
+                    id="contact-message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message here..."
+                    required
+                ></textarea>
+
+                <button type="submit" class="contact-submit-button">
+                    Send Message
+                </button>
+
+                <p id="contact-feedback" role="status"></p>
+
+            </form>
+        </section>
+
+        <a class="back-link" href="index.html">Back to Dashboard</a>
+
+    </main>
+<!-- SIDEBAR NAVIGATION -->
+    <nav
+        id="sidebar-menu"
+        class="sidebar-menu"
+        aria-label="Main navigation"
+    >
+        <button
+            id="menu-close"
+            class="menu-close"
+            aria-label="Close navigation menu"
+        >
+            &times;
+        </button>
+
+        <h2>School Menu</h2>
+
+        <a href="index.html">Dashboard</a>
+        <a href="students.html">Students</a>
+        <a href="classes.html">Classes</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="settings.html">Settings</a>
+    </nav>
+
+    <!-- DARK OVERLAY -->
+    <div
+        id="menu-overlay"
+        class="menu-overlay"
+        aria-hidden="true"
+    >
+    </div>
+    <div id="notification-container" aria-live="polite"></div>
+    <footer>
+        <p>&copy; 2026 Student Management System. All rights reserved.</p>
+        <p>Designed and developed with care.</p>
+    </footer>
+
+</body>
+</html>

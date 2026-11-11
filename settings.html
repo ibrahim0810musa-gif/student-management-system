@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- HAMBURGER MENU BUTTON -->
+    <button
+        id="menu-toggle"
+        class="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-controls="sidebar-menu"
+        aria-expanded="false"
+    >
+        ☰
+    </button>
+    <header class="page-header">
+        <h1>System Settings</h1>
+        <p>Customize your Student Management System.</p>
+    </header>
+
+    <main class="settings-page">
+
+        <section class="settings-intro">
+            <h2>Manage Your Preferences</h2>
+            <p>
+                Adjust the appearance of your dashboard and
+                manage your preferred system settings.
+            </p>
+        </section>
+
+        <!-- APPEARANCE SETTINGS -->
+        <section class="settings-card">
+            <h2>Appearance</h2>
+            <p>Choose how the website looks on your device.</p>
+
+            <div class="setting-row">
+                <div>
+                    <h3>Dark Mode</h3>
+                    <p>Switch between light and dark appearances.</p>
+                </div>
+
+                <button type="button" id="dark-mode-toggle">
+                    Toggle Dark Mode
+                </button>
+            </div>
+        </section>
+
+        <!-- PREFERENCES -->
+        <section class="settings-card">
+            <h2>Preferences</h2>
+            <p>Save your preferred system settings.</p>
+
+            <div class="setting-row">
+                <div>
+                    <h3>Save Settings</h3>
+                    <p>Save your preferences on this device.</p>
+                </div>
+
+                <button type="button" id="save-settings">
+                    Save Settings
+                </button>
+            </div>
+
+            <p id="settings-message" role="status"></p>
+        </section>
+
+        <!-- SYSTEM INFORMATION -->
+        <section class="settings-card">
+            <h2>System Information</h2>
+
+            <div class="system-info">
+                <p><strong>Application:</strong> Student Management System</p>
+                <p><strong>Version:</strong> 1.0</p>
+                <p><strong>Year:</strong> 2026</p>
+            </div>
+        </section>
+
+        <a href="index.html" class="back-link">
+            Back to Dashboard
+        </a>
+
+    </main>
+<!-- SIDEBAR NAVIGATION -->
+    <nav
+        id="sidebar-menu"
+        class="sidebar-menu"
+        aria-label="Main navigation"
+    >
+        <button
+            id="menu-close"
+            class="menu-close"
+            aria-label="Close navigation menu"
+        >
+            &times;
+        </button>
+
+        <h2>School Menu</h2>
+
+        <a href="index.html">Dashboard</a>
+        <a href="students.html">Students</a>
+        <a href="classes.html">Classes</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="settings.html">Settings</a>
+    </nav>
+
+    <!-- DARK OVERLAY -->
+    <div
+        id="menu-overlay"
+        class="menu-overlay"
+        aria-hidden="true"
+    >
+    </div>
+    <div id="notification-container" aria-live="polite"></div>
+    <footer>
+        <p>&copy; 2026 Student Management System. All rights reserved.</p>
+        <p>Designed and developed with care.</p>
+    </footer>
+
+</body>
+</html>
