@@ -78,7 +78,7 @@ No additional dependencies are required.
 
 ## Author
 
-**Your Name**
+** Name**
 Ibrahim Musa
 Frontend Developer | HTML | CSS | JavaScript
 
